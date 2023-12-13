@@ -1,0 +1,13 @@
+CarlaUE4.exe -carla-rpc-port=2000
+
+py -3.8 generate_traffic.py 
+
+py -3.8 Reniforcment_carla
+
+tensorboard --logdir logs/
+
+tensorboard --logdir logs/fit
+
+py -3.8 Lanedetection_exe.py --host 127.0.0.1 --port 2001 -c "C:\carla_simulator_0.9.14\PythonAPI\Project\lane detection\model\full_model.h5"
+
+Never change the temporary file untill execution is correct 

@@ -1,0 +1,37 @@
+
+/* General styles for the entire window */
+QWidget {
+    background-color: #34495E;
+    color: white;
+    font-family: "Arial";
+}
+
+/* Styling for buttons */
+QPushButton {
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #C0392B;
+}
+QPushButton:pressed {
+    background-color: #A93226;
+}
+
+/* Styling for labels */
+QLabel {
+    font-size: 14px;
+}
+
+/* Styling for dialogs */
+QDialog {
+    background-color: #2C3E50;
+}
+
+/* Add any additional widget styles below... */
+
